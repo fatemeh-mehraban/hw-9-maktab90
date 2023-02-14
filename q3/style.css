@@ -1,0 +1,10 @@
+ul{
+    width: 30rem;
+    padding: 2rem;
+    background-color: aliceblue;
+    line-height: 40px;
+}
+li{
+    list-style-type:square;
+    font-size: 20px;
+}
