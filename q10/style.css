@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "MyFont";
+    src: url(bill-generator-js/fonts/Vazir-Regular-FD.ttf);
+}
+body{
+    font-family: MyFont ;
+}
 *,*::after,*::before{
     margin: 0;
     padding: 0;
@@ -6,7 +13,10 @@
 body,html{
     width: 100%;
     height: 100%;
-
+}
+main{
+    justify-self: center;
+    justify-items: center;
 }
 .border-b{
     border-bottom:1px solid rgba(128, 128, 128, 0.357);
@@ -18,9 +28,7 @@ body,html{
 .ml-1{
     margin-bottom: 12rem;
 }
-.mr-auto{
-    margin-right:-3rem;
-}
+
 .margin-r-5px{
     margin-left: 5px;
 }
@@ -47,7 +55,7 @@ body,html{
     height: 1.25rem;
 }
 .tik{
-    padding: 0.5rem;
+    padding: 0.4rem 0.75rem;
 }
 .namefood{
     font-size: 15px;
@@ -71,26 +79,41 @@ article:hover{
     width: 25px;
     height: 20px;
 }
-.price::after , .vertical::after , .SumTotalOfOrders::after{
+.price::after , .vertical::after , .SumTotalOfOrders::after , .Wage::after{
     content: " تومان " ;
 }
-
+.code::after{
+    content: " درصد" ;
+}
+.modalbox{
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(3px);
+    transition: 0.5s;
+    visibility: hidden;
+}
+.boxshadow{
+    box-shadow: rgba(25, 60, 77, 0.4) 0px 25px 20px -20px;}
 @media screen and (min-width:768px) and (max-width:1023px) {
-    .mr-t-4{
-        margin-right: 4rem;
-       }
+
        .mr-d-4{
         margin-right: 4rem;
        }
        .vertical{
         margin-top: -15px;
     }
+
 }
 @media screen and (min-width:1024px) {
-    .mr-d-4{
-        margin-right: 4rem;
-       }
+
+       .mr-auto{
+        margin:0rem;
+      
+    }
        .vertical{
         margin-top: -15px;
     }
+    .borderreduse{
+        border-radius:30px;
+    }
+
 }
